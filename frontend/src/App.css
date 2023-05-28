@@ -1,0 +1,216 @@
+ /* google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Quicksand:wght@300;400;500;600&display=swap');
+/* reset */
+ * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+body {
+  font-family: "Quicksand", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  height: 15vh;
+  background-image: linear-gradient(to right top, #afd3e2, #9bcbde, #86c2da, 
+  #6fbad7, #54b2d3, #44a9cd, #32a1c6, #1798c0, #168db5, #1582aa, #15779f, #146c94); 
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+}
+.title {color: #F6F1F1;}
+.container {
+  min-height: 85vh;
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(to right top, #f6f1f1, #f1e6ec, #e3ddec, #cbd7eb, #afd3e2);
+}
+
+/* HOME */
+.home {
+  color: #F6F1F1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: inherit;
+}
+.home-container {
+  width: 40%;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  background-image: linear-gradient(to right top, #f6f1f1, #f1e6ec, #e3ddec, #cbd7eb, #afd3e2);
+  box-shadow:  20px 20px 60px linear-gradient(to right top, #f6f1f1, #f1e6ec, #e3ddec, #cbd7eb, #afd3e2),
+             -20px -20px 60px linear-gradient(to right top, #f6f1f1, #f1e6ec, #e3ddec, #cbd7eb, #afd3e2);
+}
+.home-link {
+  width: 70%;
+  border-radius: 6px;
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, #19a7ce, #54b2d3, #77bdd8, #94c8dd, #afd3e2);
+  color: #F6F1F1;
+  text-align: center;
+}
+
+
+.wrapper {
+  width: 100%;
+  padding: 1rem 3rem;
+  position: relative;
+}
+.display-container {
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F6F1F1;
+  width: 75%;
+}
+
+/* BUTTONS */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn {
+  border-radius: 5px;
+  background: transparent;
+  padding: 0.9rem 0.7rem;
+  cursor: pointer;
+  background-color: #77bdd8;
+  color: white;
+  font-size: 0.8rem;
+  margin: 0.3rem;
+  min-width: 5rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+} 
+.btn-details {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(27, 27, 27, 0.73);
+}
+.modal-content-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 4rem;
+}
+.btn-modal-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+/* INPUTS */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+label {
+  font-weight: 500; 
+  margin-bottom: 0.5rem;
+}
+.checkbox {
+  margin-left: 0.5rem;
+}
+.input { 
+  width: 500px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+} 
+.input:focus {outline: none;}
+.search-input {
+  width: 120px;
+  margin: 0.3rem 0.5rem;
+}
+.search-btn {
+  height: 40px;
+}
+.search-card {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+.search-button-container {
+  display: flex; 
+  justify-content: space-between;
+  width: 75%;
+}
+.description-text {
+  width: 500px;
+  margin-top: 0.5rem;
+  height: 70px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.error {
+  color: red;
+}
+.custom-select {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.4em 3.5em 0.4em 0.6em;
+  /* reset */
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  appearance: none;
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat; 
+}
+.custom-select:focus {
+  outline: none;
+} 
