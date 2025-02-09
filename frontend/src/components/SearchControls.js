@@ -29,7 +29,7 @@ const SearchControls = () => {
     if(response && !response?.error) {
       dispatch({ type: 'SET_CONTROLS', payload: response });
       setError(null);
-      setOrganisationId('');
+      //setOrganisationId('');
     }
   }
 
