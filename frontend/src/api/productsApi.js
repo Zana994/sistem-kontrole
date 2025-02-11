@@ -1,4 +1,5 @@
-const apiRoute = 'http://localhost:4000/api/products';
+//const apiRoute = 'http://localhost:4000/api/products';
+const apiRoute = 'https://sistem-kontrole-backend.vercel.app/api/products';
 
 // GET all products
 export const getAllProducts = async () => {

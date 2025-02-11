@@ -7,7 +7,9 @@ const controlRoutes = require('./routes/controls');
 require('dotenv').config();
 
 const app = express();
-app.use(cors())
+app.use(cors({
+  origin: ['http://localhost:4000', 'https://sistem-kontrole-backend.vercel.app/']
+}))
 
 app.use(express.json());
 
