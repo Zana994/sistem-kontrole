@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:4000', 'https://sistem-kontrole-backend.vercel.app/']
+  origin: 'https://sistem-kontrole-frontend.vercel.app'
 }))
 
 app.use(express.json());
@@ -16,7 +16,9 @@ app.use(express.json());
 app.use('/api/products', productRoutes);
 app.use('/api/organisations', organisationRoutes);
 app.use('/api/controls', controlRoutes);
+
 const PORT = process.env.PORT || 3000
+
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
   app.listen(PORT, () => {
