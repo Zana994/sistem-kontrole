@@ -1,4 +1,4 @@
-const apiRoute = '/api/products';
+const apiRoute = 'http://localhost:4000/api/products';
 
 // GET all products
 export const getAllProducts = async () => {
@@ -9,7 +9,7 @@ export const getAllProducts = async () => {
   } catch(error) {
     console.error(error);
   }
-}
+} 
 //GET product by ID
 export const getProductById = async (id) => {
   try {

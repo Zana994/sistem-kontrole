@@ -1,4 +1,4 @@
-const apiRoute= '/api/controls';
+const apiRoute= 'http://localhost:4000/api/controls';
 
 //GET all cotrols
 export const getAllControls = async () => {
